@@ -21,9 +21,9 @@
     }
 
 Проверить, чтобы все работало без ошибок в консоли */
-
+// Создаем и спрашиваем про количество фильмов
 const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
-
+// Создаем масив и передаем в него результат опроса
 const personalMovieDB = {
   count: numberOfFilms,
   movies: {},
@@ -32,12 +32,15 @@ const personalMovieDB = {
   privat: false,
 };
 
+// Создаем переменные с результатами опроса
 const a = prompt("Один из последних просмотренных фильмов?", ""),
   b = prompt("На сколько оцените его", ""),
   c = prompt("Один из последних просмотренных фильмов?", ""),
   d = prompt("На сколько оцените его", "");
 
+// Передаем их в масив
 personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
 
+// Выводим масив данных
 console.log(personalMovieDB);
